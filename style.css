@@ -1,0 +1,65 @@
+body{
+    display:flex;
+    margin: 0 0;
+}
+
+a{
+    color:white;
+}
+
+#left-side {
+    width:calc(100%/3);
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('leaf.jpg');
+    background-size:cover;
+    color:white;
+    margin-left:0;
+}
+
+#right-side {
+    width:calc(100% - 100%/3);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.transparent-black{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:xx-large;
+    background: rgba(0,0,0, 0.6);
+    height:80px;
+    text-align:center;
+}
+
+form{
+    display:grid;
+    justify-content: center;
+}
+
+fieldset{
+    display:grid;
+}
+
+.footer{
+    text-align: center;
+}
+
+img{
+    height:70px;
+}
+
+button{
+    background-color: #596D48;
+    color:whitesmoke;
+}
+
+input, label{
+    display:block;
+}

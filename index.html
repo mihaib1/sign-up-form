@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-Up Form</title>
 </head>
 <body>
-    
+    <div id="left-side">
+        <div class="empty"></div>
+        <div class="transparent-black"><img src='odin-lined.png'>Odin</div>
+        <div class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href='unsplash.com'>Unsplash</a></div>
+    </div>
+    <div id="right-side">
+        <div class="upper-text">
+            <p>
+                This is not a real online service! Text for filling this area Lorem ipsum dolor 
+                sit amet consectetur, adipisicing elit. Fuga autem ipsum, culpa rerum, 
+                distinctio sequi ipsam ea eius laboriosam ullam, reiciendis in quasi commodi a. 
+                Fugiat repellendus porro impedit fugit.
+                <p>
+                    Sign up <em>now</em> to get started.
+                </p>
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div>
+            <form id='form' action="" method="post">
+                <fieldset>
+                    <h1>Let's do this!</h1>
+                    <div>
+                        <div style="float:left;margin-right:20px;">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="firstName" id="first-name">
+
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="lastName" id="last-name">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+
+                        <div>
+                            <label for="password">Password<span aria-label="required">*</span></label>
+                            <input type="password" name="password" id="password" required>
+
+                            <label for="confirm-password">Confirm Password<span aria-label="required">*</span></label>
+                            <input type="password" name="confirmPassword" id="confirm-password">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div>
+                <button type="submit" id="submit" form="form">Create Account</button>
+            </div>
+
+            <div>
+                Already have an account? <a href="google.com">Log in</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
