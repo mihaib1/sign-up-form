@@ -1,3 +1,5 @@
+
+
 body{
     display:flex;
     margin: 0 0;
@@ -46,11 +48,12 @@ form{
 }
 
 fieldset{
-    display:grid;
+    display:block;
     margin:0 0;
     border:0;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left:40px;
 }
 
 .footer{
@@ -76,4 +79,10 @@ input, label{
     color:#596D48;
     text-decoration: none;
     font-weight: bold;
+}
+
+.form-elements{
+    display:flex;
+    justify-content: flex-start;
+    gap:80px;
 }

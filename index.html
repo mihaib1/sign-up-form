@@ -31,27 +31,25 @@
         <div>
             <form id='form' action="" method="post">
                 <fieldset>
-                    <h1>Let's do this!</h1>
-                    <div>
-                        <div>
+                    <h2>Let's do this!</h2>
+                    <div class="form-elements">
+                        <div class="left-column">
                             <label for="first-name">First Name</label>
                             <input type="text" name="firstName" id="first-name">
 
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="lastName" id="last-name">
-                        </div>
-
-                        <div>
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email">
 
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone">
-                        </div>
-
-                        <div>
                             <label for="password">Password<span aria-label="required">*</span></label>
                             <input type="password" name="password" id="password" required>
+                        </div>
+
+                        <div class="right-column">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="lastName" id="last-name">
+
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
 
                             <label for="confirm-password">Confirm Password<span aria-label="required">*</span></label>
                             <input type="password" name="confirmPassword" id="confirm-password">
