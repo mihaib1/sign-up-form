@@ -1,6 +1,7 @@
 body{
     display:flex;
     margin: 0 0;
+    background-color:whitesmoke;
 }
 
 a{
@@ -17,6 +18,7 @@ a{
     background-size:cover;
     color:white;
     margin-left:0;
+    border:none;
 }
 
 #right-side {
@@ -39,16 +41,22 @@ a{
 }
 
 form{
-    display:grid;
-    justify-content: center;
+    margin:0 0;
+    border:0;
 }
 
 fieldset{
     display:grid;
+    margin:0 0;
+    border:0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .footer{
     text-align: center;
+    font-size:small;
+    margin-bottom:10px;
 }
 
 img{
@@ -62,4 +70,10 @@ button{
 
 input, label{
     display:block;
+}
+
+.login{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
