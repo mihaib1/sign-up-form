@@ -8,64 +8,79 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <div id="left-side">
-        <div class="empty"></div>
-        <div class="transparent-black"><img src='odin-lined.png'>Odin</div>
-        <div class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href='unsplash.com'>Unsplash</a></div>
-    </div>
-    <div id="right-side">
-        <div class="upper-text">
-            <p>
-                This is not a real online service! Text for filling this area Lorem ipsum dolor 
-                sit amet consectetur, adipisicing elit. Fuga autem ipsum, culpa rerum, 
-                distinctio sequi ipsam ea eius laboriosam ullam, reiciendis in quasi commodi a. 
-                Fugiat repellendus porro impedit fugit.
-                <p>
-                    Sign up <em>now</em> to get started.
-                </p>
-            </p>
-            <p>
-                You <em>know</em> you want to.
-            </p>
+    <div class="container">
+        <div id="left-side">
+            <div class="transparent-black">
+                <div class="logo-container">
+                    <div class='image'>
+                        <img src='odin-lined.png' alt="odin-logo">
+                    </div>
+                    <div class="odin-text">
+                        Odin
+                    </div>
+                </div>
+            </div>
+            <div class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href='unsplash.com'>Unsplash</a></div>
         </div>
-        <div>
-            <form id='form' action="" method="post">
-                <fieldset>
-                    <h2>Let's do this!</h2>
-                    <div class="form-elements">
-                        <div class="left-column">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="firstName" id="first-name">
-
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-
-                            <label for="password">Password<span aria-label="required">*</span></label>
-                            <input type="password" name="password" id="password" required>
+        <div id="right-side">
+            <div class="upper-text">
+                <p>
+                    This is not a real online service! Text for filling this area Lorem ipsum dolor 
+                    sit amet consectetur, adipisicing elit. Fuga autem ipsum, culpa rerum, 
+                    distinctio sequi ipsam ea eius laboriosam ullam, reiciendis in quasi commodi a. 
+                    Fugiat repellendus porro impedit fugit.
+    
+                    De incercat pe partea de form -> center si gap intre div-uri. Am f mult spatiu nefolosit si arata urat. de cautat font 
+                    <p>
+                        Sign up <em>now</em> to get started.
+                    </p>
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <div>
+                <form id='form' action="" method="post">
+                    <fieldset>
+                        <h2>Let's do this!</h2>
+                        <div class="form-elements">
+                            <div class="left-column">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="firstName" id="first-name">
+    
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+    
+                                <label for="password">Password<span aria-label="required"> *</span></label>
+                                <input type="password" name="password" class="password" required>
+                            </div>
+    
+                            <div class="right-column">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="lastName" id="last-name">
+    
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone">
+    
+                                <label for="password confirm">Confirm Password<span aria-label="required"> *</span></label>
+                                <input type="password" name="passwordConfirm" class="password confirm" required>
+                            </div>
                         </div>
-
-                        <div class="right-column">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="lastName" id="last-name">
-
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone">
-
-                            <label for="confirm-password">Confirm Password<span aria-label="required">*</span></label>
-                            <input type="password" name="confirmPassword" id="confirm-password">
+                    </fieldset>
+                    <div class="create-account-or-login">
+                        <button type="submit" id="submit" form="form">Create Account</button>
+                        <div class="login-text">
+                            Already have an account? <a href="google.com" class="login"> Log in</a>
                         </div>
                     </div>
-                </fieldset>
-            </form>
-
-            <div>
-                <button type="submit" id="submit" form="form">Create Account</button>
-            </div>
-
-            <div>
-                Already have an account? <a href="google.com" class="login">Log in</a>
+                </form>
+    
+    
+    
+    
             </div>
         </div>
     </div>
+    
 </body>
 </html>

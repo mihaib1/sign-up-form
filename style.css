@@ -1,7 +1,19 @@
+:root {
+  /* using CSS Custom properties ('CSS Variables') to
+     simplify some aspects of the presentation update: */
+  --gridColumns: 2;
+}
 
+@font-face {
+    font-family: "myfont";
+    src: url("Norse-Bold.woff") format('woff');
+    padding:0;
+    margin:0;
+  }
 
 body{
     display:flex;
+    min-height: 100vh;
     margin: 0 0;
     background-color:whitesmoke;
 }
@@ -11,35 +23,35 @@ a{
 }
 
 #left-side {
-    width:calc(100%/3);
-    height:100vh;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width:calc(100%/3);
+    color:white;
     background-image: url('leaf.jpg');
     background-size:cover;
-    color:white;
     margin-left:0;
     border:none;
+    flex-grow: 1;
 }
+
 
 #right-side {
     width:calc(100% - 100%/3);
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content:center;
+    gap:1.5em;
 }
 
 .transparent-black{
     display:flex;
     justify-content: center;
-    align-items: center;
     color:white;
-    font-size:xx-large;
     background: rgba(0,0,0, 0.6);
-    height:80px;
-    text-align:center;
+    height:1.5em;
+    font-size:5em;
+    margin-top: 2em;
 }
 
 form{
@@ -54,6 +66,7 @@ fieldset{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding-left:40px;
+    padding-bottom:40px;
 }
 
 .footer{
@@ -63,12 +76,21 @@ fieldset{
 }
 
 img{
-    height:70px;
+    height:5rem;
+    text-align: center;
 }
 
 button{
     background-color: #596D48;
     color:whitesmoke;
+}
+
+button:hover{
+    background-color:rgb(80, 97, 65);
+}
+
+button:active{
+    background-color: rgb(59, 69, 50);
 }
 
 input, label{
@@ -82,7 +104,90 @@ input, label{
 }
 
 .form-elements{
+    display:grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+}
+
+input{
+    appearance:none;
+    border:solid 2px;
+    border-color:#E5E7EB;
+    border-radius: 4px;
+    height:24px;
+    width:16em;
+}
+
+.create-account-or-login{
+    margin-top:2.5em;
+    margin-left:2.5em;
+    font-size: medium;
+}
+
+button{
+    border:none;
+    border-radius:8px;
+    height:3em;
+    width:11em;
+    font-weight: bolder;
+    font-size:large;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom:24px;
+}
+
+@media screen and (max-width : 800px){
+       :root {
+    --gridColumns: 1;
+  }
+}
+
+.password:invalid{
+    border:solid 1px;
+    border-color:red;
+    border-radius: 4px;
+}
+
+.text{
+    display:inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-container{
     display:flex;
-    justify-content: flex-start;
-    gap:80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-text{
+    font-family: 'myfont', "Arial";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.upper-text{
+    margin-left:2em;
+    margin-bottom:0;
+    font-size: large;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    min-height: 100vh;
+    flex-grow:1;
+}
+
+.login{
+    
 }
