@@ -83,14 +83,17 @@ img{
 button{
     background-color: #596D48;
     color:whitesmoke;
+    transition-duration: 0.2s;
 }
 
 button:hover{
     background-color:rgb(80, 97, 65);
+    transition-duration: 0.2s;
 }
 
 button:active{
     background-color: rgb(59, 69, 50);
+    transition-duration: 0.1s;
 }
 
 input, label{
@@ -140,7 +143,7 @@ button{
   }
 }
 
-.password:invalid{
+.password:invalid, .password-confirm:invalid{
     border:solid 1px;
     border-color:red;
     border-radius: 4px;
@@ -188,6 +191,7 @@ button{
     flex-grow:1;
 }
 
-.login{
-    
+input:focus{
+    appearance: none;
+    outline-color: green;
 }
