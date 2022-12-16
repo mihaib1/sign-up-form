@@ -4,6 +4,8 @@
   --gridColumns: 2;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 @font-face {
     font-family: "myfont";
     src: url("Norse-Bold.woff") format('woff');
@@ -16,6 +18,7 @@ body{
     min-height: 100vh;
     margin: 0 0;
     background-color:whitesmoke;
+    font-weight: 500;
 }
 
 a{
@@ -98,6 +101,7 @@ button:active{
 
 input, label{
     display:block;
+    font-family: 'Roboto', sans-serif;
 }
 
 .login{
@@ -109,6 +113,9 @@ input, label{
 .form-elements{
     display:grid;
     grid-template-columns: repeat(var(--gridColumns), 1fr);
+    color:darkgrey;
+    font-size: small;
+    letter-spacing: 1px;
 }
 
 input{
@@ -182,6 +189,7 @@ button{
     margin-left:2em;
     margin-bottom:0;
     font-size: large;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -195,3 +203,22 @@ input:focus{
     appearance: none;
     outline-color: green;
 }
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.right-column{
+    display: flex;
+    flex-direction: column;
+    gap:12px; 
+}
+
+.password-container::after{
+    content:"* Passwords do not match!";
+    letter-spacing: 0;
+    color:red;
+}
+

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -36,7 +40,7 @@
                     </p>
                 </p>
                 <p>
-                    You <em>know</em> you want to.
+                    For <em>testing</em> purposes.
                 </p>
             </div>
             <div>
@@ -45,25 +49,33 @@
                         <h2>Let's do this!</h2>
                         <div class="form-elements">
                             <div class="left-column">
-                                <label for="first-name">First Name</label>
-                                <input type="text" name="firstName" id="first-name" placeholder="John">
-    
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-    
-                                <label for="password">Password<span aria-label="required"> *</span></label>
-                                <input type="password" name="password" class="password" required minlength="8" maxlength="31">
+                                <div class="first-name-container">
+                                    <label for="first-name">FIRST NAME</label>
+                                    <input type="text" name="firstName" id="first-name" placeholder="John">
+                                </div>
+                                <div class="email-container">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="password-container">
+                                    <label for="password">PASSWORD<span aria-label="required"></span></label>
+                                    <input type="password" name="password" id="password" required minlength="8" maxlength="31">
+                                </div>
                             </div>
-    
+
                             <div class="right-column">
-                                <label for="last-name">Last Name</label>
-                                <input type="text" name="lastName" id="last-name">
-    
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone" id="phone">
-    
-                                <label for="password-confirm">Confirm Password<span aria-label="required"> *</span></label>
-                                <input type="password" name="passwordConfirm" class="password-confirm" required minlength="8" maxlength="31">
+                                <div class="last-name-container">
+                                    <label for="last-name">LAST NAME</label>
+                                    <input type="text" name="lastName" id="last-name">
+                                </div>
+                                <div class="phone-container">
+                                    <label for="phone">PHONE NUMBER</label>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                                <div class="password-confirm-container">
+                                    <label for="password-confirm">CONFIRM PASSWORD<span aria-label="required"></span></label>
+                                    <input type="password" name="passwordConfirm" id="password-confirm" required minlength="8" maxlength="31">
+                                </div>
                             </div>
                         </div>
                     </fieldset>
