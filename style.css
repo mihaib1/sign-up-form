@@ -195,7 +195,7 @@ input:focus{
 }
 
 #password-container::after{
-    content:"* Passwords should match!";
+    content:"* Passwords should match and have at least 8 characters!";
     letter-spacing: 0;
     color:red;
 }

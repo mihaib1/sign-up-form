@@ -2,9 +2,6 @@ let passwordContainer = document.getElementById("password-container");
 let passwordConfirm = document.getElementById("password-confirm");
 
 
-VerifyPasswordsMatch();
-
-
 passwordContainer.addEventListener("keyup", function(event){
     VerifyPasswordsMatch();
 })
