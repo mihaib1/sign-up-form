@@ -1,17 +1,20 @@
-:root {
-  /* using CSS Custom properties ('CSS Variables') to
-     simplify some aspects of the presentation update: */
-  --gridColumns: 2;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 @font-face {
-    font-family: "myfont";
+    font-family: "norseBold";
     src: url("Norse-Bold.woff") format('woff');
     padding:0;
     margin:0;
   }
+
+
+
+:root {
+  /* using CSS Custom properties ('CSS Variables') to
+     simplify some aspects of the presentation update: */
+  --gridColumns: 2;
+  --passwordErrorMessage: ;
+}
 
 body{
     display:flex;
@@ -19,10 +22,6 @@ body{
     margin: 0 0;
     background-color:whitesmoke;
     font-weight: 500;
-}
-
-a{
-    color:white;
 }
 
 #left-side {
@@ -38,15 +37,6 @@ a{
     flex-grow: 1;
 }
 
-
-#right-side {
-    width:calc(100% - 100%/3);
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    gap:1.5em;
-}
-
 .transparent-black{
     display:flex;
     justify-content: center;
@@ -55,111 +45,6 @@ a{
     height:1.5em;
     font-size:5em;
     margin-top: 2em;
-}
-
-form{
-    margin:0 0;
-    border:0;
-}
-
-fieldset{
-    display:block;
-    margin:0 0;
-    border:0;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding-left:40px;
-    padding-bottom:40px;
-}
-
-.footer{
-    text-align: center;
-    font-size:small;
-    margin-bottom:10px;
-}
-
-img{
-    height:5rem;
-    text-align: center;
-}
-
-button{
-    background-color: #596D48;
-    color:whitesmoke;
-    transition-duration: 0.2s;
-}
-
-button:hover{
-    background-color:rgb(80, 97, 65);
-    transition-duration: 0.2s;
-}
-
-button:active{
-    background-color: rgb(59, 69, 50);
-    transition-duration: 0.1s;
-}
-
-input, label{
-    display:block;
-    font-family: 'Roboto', sans-serif;
-}
-
-.login{
-    color:#596D48;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.form-elements{
-    display:grid;
-    grid-template-columns: repeat(var(--gridColumns), 1fr);
-    color:darkgrey;
-    font-size: small;
-    letter-spacing: 1px;
-}
-
-input{
-    appearance:none;
-    border:solid 2px;
-    border-color:#E5E7EB;
-    border-radius: 4px;
-    height:24px;
-    width:16em;
-}
-
-.create-account-or-login{
-    margin-top:2.5em;
-    margin-left:2.5em;
-    font-size: medium;
-}
-
-button{
-    border:none;
-    border-radius:8px;
-    height:3em;
-    width:11em;
-    font-weight: bolder;
-    font-size:large;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-bottom:24px;
-}
-
-@media screen and (max-width : 800px){
-       :root {
-    --gridColumns: 1;
-  }
-}
-
-.password:invalid, .password-confirm:invalid{
-    border:solid 1px;
-    border-color:red;
-    border-radius: 4px;
-}
-
-.text{
-    display:inline-block;
-    align-items: center;
-    text-align: center;
 }
 
 .logo-container{
@@ -178,9 +63,114 @@ button{
 }
 
 .odin-text{
-    font-family: 'myfont', "Arial";
+    font-family: 'norseBold', "Arial";
     display:flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    height:5rem;
+    text-align: center;
+}
+
+.left-footer{
+    text-align: center;
+    font-size:small;
+    margin-bottom:10px;
+}
+
+#right-side {
+    width:calc(100% - 100%/3);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:1.5em;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+form{
+    margin:0 0;
+    border:0;
+}
+
+fieldset{
+    display:block;
+    margin:0 0;
+    border:0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left:40px;
+    padding-bottom:40px;
+}
+
+input, label{
+    display:block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-elements{
+    display:grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    color:darkgrey;
+    font-size: small;
+    letter-spacing: 1px;
+    gap:8px;
+}
+
+input{
+    appearance:none;
+    border:solid 2px;
+    border-color:#E5E7EB;
+    border-radius: 4px;
+    height:24px;
+    width:16em;
+}
+
+button{
+    border:none;
+    border-radius:8px;
+    height:3em;
+    width:11em;
+    font-weight: bolder;
+    font-size:large;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom:24px;
+}
+
+.create-account-or-login{
+    margin-top:2.5em;
+    margin-left:2.5em;
+    font-size: medium;
+}
+
+.login{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width : 800px){
+       :root {
+    --gridColumns: 1;
+  }
+}
+
+#password:invalid, #password-confirm:invalid{
+    border:solid 1px;
+    border-color:red;
+    border-radius: 4px;
+}
+
+.text{
+    display:inline-block;
     align-items: center;
     text-align: center;
 }
@@ -204,21 +194,36 @@ input:focus{
     outline-color: green;
 }
 
-.left-column{
-    display: flex;
-    flex-direction: column;
-    gap:12px;
-}
-
-.right-column{
-    display: flex;
-    flex-direction: column;
-    gap:12px; 
-}
-
-.password-container::after{
-    content:"* Passwords do not match!";
+#password-container::after{
+    content:"* Passwords should match!";
     letter-spacing: 0;
     color:red;
 }
 
+#password-container.no-after::after{
+    display:none;
+}
+
+a{
+    color:white;
+}
+
+button{
+    background-color: #596D48;
+    color:whitesmoke;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    background-color:rgb(80, 97, 65);
+    transition-duration: 0.2s;
+}
+
+button:active{
+    background-color: rgb(59, 69, 50);
+    transition-duration: 0.1s;
+}
+
+.login-text{
+    margin-bottom:16px;
+}

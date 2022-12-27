@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href='unsplash.com'>Unsplash</a></div>
+            <div class="left-footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href='unsplash.com'>Unsplash</a></div>
         </div>
         <div id="right-side">
             <div class="upper-text">
@@ -33,8 +33,6 @@
                     sit amet consectetur, adipisicing elit. Fuga autem ipsum, culpa rerum, 
                     distinctio sequi ipsam ea eius laboriosam ullam, reiciendis in quasi commodi a. 
                     Fugiat repellendus porro impedit fugit.
-    
-                    De incercat pe partea de form -> center si gap intre div-uri. Am f mult spatiu nefolosit si arata urat. de cautat font 
                     <p>
                         Sign up <em>now</em> to get started.
                     </p>
@@ -43,42 +41,42 @@
                     For <em>testing</em> purposes.
                 </p>
             </div>
-            <div>
                 <form id='form' action="" method="post">
                     <fieldset>
                         <h2>Let's do this!</h2>
                         <div class="form-elements">
-                            <div class="left-column">
-                                <div class="first-name-container">
-                                    <label for="first-name">FIRST NAME</label>
-                                    <input type="text" name="firstName" id="first-name" placeholder="John">
-                                </div>
-                                <div class="email-container">
-                                    <label for="email">EMAIL</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div class="password-container">
-                                    <label for="password">PASSWORD<span aria-label="required"></span></label>
-                                    <input type="password" name="password" id="password" required minlength="8" maxlength="31">
-                                </div>
+                            <div class="first-name-container">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" name="firstName" id="first-name">
                             </div>
 
-                            <div class="right-column">
-                                <div class="last-name-container">
-                                    <label for="last-name">LAST NAME</label>
-                                    <input type="text" name="lastName" id="last-name">
-                                </div>
-                                <div class="phone-container">
-                                    <label for="phone">PHONE NUMBER</label>
-                                    <input type="tel" name="phone" id="phone">
-                                </div>
-                                <div class="password-confirm-container">
-                                    <label for="password-confirm">CONFIRM PASSWORD<span aria-label="required"></span></label>
-                                    <input type="password" name="passwordConfirm" id="password-confirm" required minlength="8" maxlength="31">
-                                </div>
+                            <div class="last-name-container">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" name="lastName" id="last-name">
                             </div>
+                            
+                            <div class="email-container">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            
+                            <div class="phone-container">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            
+                            <div id="password-container">
+                                <label for="password">PASSWORD<span aria-label="required"></span></label>
+                                <input type="password" name="password" id="password" required minlength="8" maxlength="31">
+                            </div>
+                            
+                            <div class="password-confirm-container">
+                                <label for="password-confirm">CONFIRM PASSWORD<span aria-label="required"></span></label>
+                                <input type="password" name="passwordConfirm" id="password-confirm" required minlength="8" maxlength="31">
+                            </div>   
                         </div>
                     </fieldset>
+
                     <div class="create-account-or-login">
                         <button type="submit" id="submit" form="form">Create Account</button>
                         <div class="login-text">

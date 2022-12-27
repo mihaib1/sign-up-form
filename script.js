@@ -1,11 +1,24 @@
-password = document.getElementById("password");
-confirmPassword = document.getElementById("password-confirm")
-console.log(password);
+let passwordContainer = document.getElementById("password-container");
+let passwordConfirm = document.getElementById("password-confirm");
 
-password.addEventListener('keyup', function(e) {
-    console.log(e.path[0].value);
-});
 
-confirmPassword.addEventListener('keyup', function(event){
-    console.log(event.path[0].value);
-});
+VerifyPasswordsMatch();
+
+
+passwordContainer.addEventListener("keyup", function(event){
+    VerifyPasswordsMatch();
+})
+
+passwordConfirm.addEventListener('keyup', function(event){
+    VerifyPasswordsMatch()
+})
+
+
+function VerifyPasswordsMatch() {
+    if(password.value === passwordConfirm.value) {
+        passwordContainer.classList.add("no-after");
+    } else {
+        passwordContainer.classList.remove("no-after");
+    }
+}
+
